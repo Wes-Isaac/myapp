@@ -4,7 +4,6 @@ on:
   pull_request:
     types: [ labeled ]
 jobs:
-
 build_ios:
   type: build # This job type creates a production build for iOS
   if: github.event.label.name == 'build-ios'
